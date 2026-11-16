@@ -12,27 +12,23 @@ const cajaResultado = document.getElementById("resultado");
 
 function calcular() {
     // Si falta algún valor no se calcula.
-    if (inputPrimero.value === "" || inputSegundo.value === "" || inputTercero.value === "" || inputCuarto.value === "") {
-        cajaResultado.textContent = "Escribe los 4 valores";
+    if (inputPrimero.value === "" || inputSegundo.value === "") {
+        cajaResultado.textContent = "Escribe los 2 valores";
         return;
     }
     
     // Lo que se escribe en un input es texto: Number() lo convierte en número.
     const primerValor = Number(inputPrimero.value);
     const segundoValor = Number(inputSegundo.value);
-    const tercerValor = Number(inputTercero.value);
-    const cuartoValor = Number(inputCuarto.value);
 
-    // Sumar los 4 valores
-    const sumaValores = primerValor + segundoValor + tercerValor + cuartoValor;
 
-    // A la suma total se le resta el cuarto valor.
-    const resultadoResta = sumaValores - cuartoValor;
+    // Sumar los 2 valores
+    const sumaValores = Number("10") + Number("20");
+
 
     // Mostrar los resultados en la página.
     cajaResultado.innerHTML =
-        "Suma de los 4 valores: <b>" + sumaValores + "</b><br>" +
-        "Suma menos el cuarto valor: <b>" + resultadoResta + "</b>";        
+        "Suma de los 2 valores: <b>" + sumaValores + "</b><br>" ;
 }
 
 // Cada vez que se escribe en cualquiera de los inputs, se vuelve a calcular.

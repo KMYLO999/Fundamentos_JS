@@ -1,9 +1,9 @@
 // ============================================================== //
-// EJERCICIO 3 - SUMAR 4 VALORES Y RESTAR EL ÚLTIMO
-// Leer 4 valores, sumarlos y a la suma restarle el último valor.
+// EJERCICIO 2 - ENCONTRAR EL ÁREA DE UN TRIÁNGULO
+// Leer la base y la altura de un triángulo y calcular su área.
 // ============================================================== //
 
-// Buscamos en HTML los 4 inputs y la caja de resultado (por su id).
+// Buscamos en HTML los 2 inputs y la caja de resultado (por su id).
 const inputPrimero = document.getElementById("base");
 const inputSegundo = document.getElementById("altura");
 // const inputTercero = document.getElementById("tercerValor");
@@ -22,8 +22,6 @@ function calcular() {
     const altura = Number(inputSegundo.value);
     // const tercerValor = Number(inputTercero.value);
     // const cuartoValor = Number(inputCuarto.value);
-
-    // const areaTriangulo = (Base*Altura)/2
 
     const areaTriangulo = (base*altura)/2;
     // A la suma total se le resta el cuarto valor.
