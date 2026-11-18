@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* El asterísco es el selector universal*/
+
+p{
+    color: rgb(76, 0, 255);
+}
+/* Las etiquetas se invocan por su nombre */
+
+div{
+    border-color: #00ff00;
+    border: 8px solid #0e4485
+}
+
+/* Las clases afectan a los elementos
+que contengan la misma clase */
+
+.clase-caja{
+    border: 8px solid #e8d210;
+    background-color: #0e4485;
+}
+    
+.clase-parrafo{
+    color: rgb(255, 255, 255)
+}
+
+/* Los IDs afectan a elementos
+especificos por su ID*/
+
+#fotografia{
+    border: 8px solid purple;
+    width: 300px;
+}
+
+#tarde{
+        border: 8px solid rgb(30, 176, 59);
+    width: 300px;
+}
