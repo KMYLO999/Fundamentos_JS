@@ -3,7 +3,7 @@ function renderizar(aprendiz){
     let filas = "";
 
     for (const [clave, valor] of Object.entries(aprendiz)){
-        const contenido = (valor ==="" ||valor ===null||valor ===undefined)
+        const contenido = (valor ===""||valor ===null||valor ===undefined)
         ? "<em>sin dato</em>"
         : valor;
 
@@ -26,7 +26,6 @@ function renderizar(aprendiz){
 }
 
 // Cargar el JSON y luego renderizar
-
 async function cargarAprendiz() {
     try{
         const respuesta = await fetch("aprendices.json");
@@ -45,4 +44,4 @@ async function cargarAprendiz() {
     }
 }
 
-cargarAprendiz
+cargarAprendiz();
